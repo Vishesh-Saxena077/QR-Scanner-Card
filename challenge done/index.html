@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code Scanner Card</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .main {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(215, 218, 234);
+        }
+        
+        .card {
+            background-color: white;
+            height: auto;
+            max-width: 300px;
+            width: 60%;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        
+        .card .card-inner {
+            padding: 5px;
+        }
+        
+        .card .card-inner .card-img-base {
+            height: 280px;
+        }
+        
+        .card .card-inner .card-img-base img {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+        }
+        
+        .card .card-inner .content-base {
+            margin-top: 10px;
+            padding: 10px;
+        }
+        
+        .card .card-inner .content-base .content-head {
+            font-size: 20px;
+            text-align: left;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+        }
+        
+        .card .card-inner .content-base .content-body {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            color: rgb(159, 159, 159);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-img-base">
+                    <img src="./images/image-qr-code.png" alt="No Img">
+                </div>
+                <div class="content-base">
+                    <h3 class="content-head"> Improve your front-end skills by building projects</h3>
+                    <p class="content-body"> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
